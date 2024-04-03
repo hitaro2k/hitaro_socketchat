@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WebSocket Chat</title>
+    <link rel="stylesheet" href="/static/css/ins.css">
+    <script src="https://cdn.socket.io/4.7.5/socket.io.min.js" integrity="sha384-2huaZvOR9iDzHqslqwpR87isEmrfxqyWOF7hr7BY6KG0+hVKLoEXMPUJw3ynWuhO" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="chat">
+            <div class="title-wrap">
+                <h2 class="title">Hitaro socket_chat</h2>
+            </div>
+            <div class="content">
+                <div id="message_area" class="users_message"></div>
+                <div class="users_stroke">
+                    <div class="input-wrapper">
+                        <input id="message_user" type="text">
+                       
+                    </div> 
+                    <button id="send_btn" class="send">Send</button>
+                </div>
+            </div>
+        </div>
+        <div class="users_info">
+            <div class="users-reg">
+                <p class="title">Введите ник и присоидинитесь к чату</p>
+                <div class="input_wrapper">
+                    <input id="join-input" type="text" class="input">
+                </div>
+                <button class="join">Join</button>
+            </div>
+            <div class="users">
+                <h2 class="title">All Users:</h2>
+
+            </div>  
+        </div>
+
+    </div>
+    <script src="/static/js/ins.js"></script>
+</body>
+</html>
